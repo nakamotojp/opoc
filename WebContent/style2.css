@@ -1,0 +1,1302 @@
+@charset "utf-8";
+
+
+
+body,html {
+	height: 100%;
+	width: 100%;
+}
+body {
+	color: #666666;	/*全般の文字色*/
+	margin: 0px;
+	padding: 0px;
+	text-align: center;
+	background-color: #FFFFFF;
+	font: 75%/2.4 "ＭＳ Ｐゴシック", Osaka, "ヒラギノ角ゴ Pro W3";	/*75%が文字サイズ。/2.4が行間。*/
+}
+h1,h2,h3,p,ul,li,dl,dt,dd{
+	margin: 0px;
+	padding: 0px;
+}
+ul{
+	list-style-type: none;
+}
+img {
+	border: none;
+}
+.fr {
+	float: right;
+}
+.color1 {
+	color: #25c0e6;
+}
+#contents ul.listmark {
+	padding: 0.5em 20px 0em 30px;
+	list-style: square;
+}
+
+
+
+/*コンテナー
+---------------------------------------------------------------------------*/
+
+img.bg {
+	  /* Set rules to fill background */
+	  min-height: 113px;
+	  min-width: 1024px;
+	  /* Set up proportionate scaling */
+	  width: 100%;
+	  height: 113px;
+	  /* Set up positioning */
+	  position: absolute;
+	  /* またはabsolute; */
+	  top: 0;
+	  left: 0;
+	  
+	  
+}
+
+div#container {
+	text-align: left;
+	width: 100%;
+	height: 100%;
+	position: relative;
+}
+
+
+/*全般のリンク設定
+---------------------------------------------------------------------------*/
+#contents a {
+	color: #666666;
+}
+#contents a:hover {
+	color: #25c0e6;	/*カーソルオーバー時の文字色*/
+	position: relative;
+	left: 1px;	/*オーバー時に左から1px移動する設定*/
+	top: 1px;	/*オーバー時に上から1px移動する設定*/
+}
+
+
+
+/*ヘッダー
+---------------------------------------------------------------------------*/
+#header {
+	height: 104px;
+	position: relative;
+	width: 1000px;
+	margin-right: auto;
+	margin-left: auto;
+}
+
+/*ヘッダーのロゴ位置設定*/
+#header #logo {
+	position: absolute;
+	left: 0px;		/*ヘッダーブロックに対して左から0pxの位置に配置*/
+	bottom: 10px;	/*ヘッダーブロックに対して下から10pxの位置に配置*/
+}
+
+/*ヘッダーのh1タグの設定*/
+#header h1 {
+	font-size: 12px;	/*文字サイズ*/
+	font-weight: normal;
+	color: #FFFFFF;		/*文字色*/
+	text-align: right;	/*テキストの右寄せ。左よせがいいならこの１行を削除する。*/
+	
+}
+#header h1 a:link,a:visited {
+	color: #FFF;
+	text-decoration: none;
+	}
+#header h1 a:hover{
+	text-decoration:underline;
+
+}
+
+
+/*右上メニュー
+---------------------------------------------------------------------------*/
+ul#menu {
+	position: absolute;
+	right: 0px;
+	bottom: 0px;
+	height: 50px;
+}
+ul#menu li {
+	float: left;
+	width: 120px;
+}
+ul#menu img {
+	vertical-align: bottom;
+}
+
+
+
+/*コンテンツ
+---------------------------------------------------------------------------*/
+#contents {
+	width: 1000px;
+	margin-right: auto;
+	margin-left: auto;
+	padding-top: 30px;
+	clear: left;
+}
+
+
+
+/*mainとsubを囲むボックス
+---------------------------------------------------------------------------*/
+#wrap {
+	float: left;
+	width: 1000px;
+}
+
+#print{
+	padding:none;
+	float:none;
+	margin-left:auto;
+	margin-right:auto;
+	width: 650px;
+	margin-top: 20px;
+}
+
+#print h2{
+	text-decoration: underline;
+	color:black;
+	font-size: 100%;
+	padding-right: 10px;
+	padding-left: 10px;
+	letter-spacing: 0.2em;	/*文字間隔を少し広げる*/
+	clear: both;
+	border-top: 1px solid;		/*枠線（上）の幅と線種と色*/
+	border-right: 1px solid;	/*枠線（右）の幅と線種と色*/
+	border-left: 1px solid;		/*枠線（左）の幅と線種と色*/
+}
+
+/*サブコンテンツ（左ブロック）
+---------------------------------------------------------------------------*/
+#sub {
+	float: left;
+	width: 190px;
+}
+#sub h2 {
+	text-align: center;	/*左ブロックのh2見出しだけセンタリングする設定。他と同様左よせがいいならこの１行削除する。*/
+}
+#sub h2.block{
+	margin-bottom: 5px;
+}
+
+
+/*左側メニュー
+---------------------------------------------------------------------------*/
+#sub .submenu li {
+	text-align: center;	/*センタリング設定。左よせがいいならこの１行削除する。*/
+	border-bottom: 1px solid #919589;	/*下線の幅と線種と色*/
+}
+
+/*左側メニューリンク設定*/
+#sub .submenu a {
+	display: block;
+	width: 190px;
+	text-decoration: none;
+}
+
+/*左側メニューリンクのカーソルオーバー時設定*/
+#sub .submenu a:hover {
+	background: #f8f9f8;	/*オーバー時の文字色*/
+	left: 0px;
+	top: 0px;
+}
+
+
+
+/*h2タグの装飾設定
+---------------------------------------------------------------------------*/
+#contents h2 {
+	background: #24bbe2 url(images/midashi_bg.gif) repeat-x top;	/*背景色、画像の設定*/
+	font-size: 100%;
+	color: #FFFFFF;	/*文字色を白色に*/
+	padding-right: 10px;
+	padding-left: 10px;
+	letter-spacing: 0.2em;	/*文字間隔を少し広げる*/
+	border-top: 1px solid #26b6dd;		/*枠線（上）の幅と線種と色*/
+	border-right: 1px solid #167ca1;	/*枠線（右）の幅と線種と色*/
+	border-bottom: 1px solid #167ca1;	/*枠線（下）の幅と線種と色*/
+	border-left: 1px solid #26b6dd;		/*枠線（左）の幅と線種と色*/
+	clear: both;
+}
+
+
+
+/*メインコンテンツ（中央ボックス）
+---------------------------------------------------------------------------*/
+#main {
+	float: right;
+	width: 800px;
+}
+
+
+
+/*サイドコンテンツ（右側ボックス）
+---------------------------------------------------------------------------*/
+#side {
+	float: right;
+	width: 250px;
+}
+
+/*フッター（最下部コピーライト部分）
+---------------------------------------------------------------------------*/
+#footer {
+	clear: both;
+	width: 1000px;
+	margin-right: auto;
+	margin-left: auto;
+	font-size: 11px;	/*文字サイズ*/
+	text-align: center;
+	padding-top: 70px;
+	background: url(images/footer_bg2.gif) repeat-x top;
+	padding-bottom: 30px;
+	letter-spacing: 0.2em;	/*文字の間隔を少し広げる*/
+}
+
+/*メインコンテンツ内の「What's New」部分
+---------------------------------------------------------------------------*/
+#main dl.new {
+	height: 100px;		/*What's Newボックスの高さ*/
+	overflow: auto;		/*この設定でiframe風に見える*/
+	margin-right: auto;
+	margin-left: auto;
+	margin-bottom: 20px;
+	padding: 10px;
+	border-right: 1px solid #919589;	/*What's Newのフチの右ライン*/
+	border-bottom: 1px solid #919589;	/*What's Newのフチの下ライン*/
+	border-left: 1px solid #919589;	/*What's Newボックスの背景色*/
+	line-height: 1.8;
+	
+}
+
+#main dt {
+	font-weight: bold;	/*日付の文字を太字に。通常がよければこの１行を削除する。*/
+}
+
+#main dd {
+	border-bottom: 1px solid #919589;	/*説明文の下に1pxの直線(solid)を#919589の色で入れる。*/
+}
+
+/*op用テーブル
+---------------------------------------------------------------------------*/
+table#table-01 { 
+   	border-collapse: collapse;	border-spacing: 0;
+    width: 800px;
+	background: white; 					/*tableボックスの背景色*/
+}
+
+table#table-01 th{
+	font-weight:bold;
+	text-align:center;
+/*	background: url(image/th_10.jpg) repeat-x bottom; */
+	border-right: 1px solid #919589;	/*tableのフチの右ライン*/
+	border-bottom: 1px solid #919589;	/*tableのフチの下ライン*/
+	border-left: 1px solid #919589;		/*ボックスの背景色*/
+	color: #333;
+	width: 55px;
+}
+table#table-01 td{
+/*	background: url(image/th_10.jpg) repeat-x bottom; */
+	text-align:center;
+	border-right: 1px solid #919589;	/*tableのフチの右ライン*/
+	border-bottom: 1px solid #919589;	/*tableのフチの下ライン*/
+	border-left: 1px solid #919589;		/*ボックスの背景色*/
+	color: #333;
+}
+
+/*リスト用テーブル
+---------------------------------------------------------------------------*/
+table#table-list { 
+   	border-collapse: collapse;
+   	border-spacing: 0;
+    width: 100%;
+	background: white; 					/*tableボックスの背景色*/
+	margin-bottom: 10px;
+}
+
+
+table#table-list td{
+ 	text-align:center;
+ 	padding-left:1px;
+ 	padding-bottom: 1px;
+ 	padding-top: 1px;
+	border-right: 1px solid #919589;	/*tableのフチの右ライン*/
+	border-bottom: 1px solid #919589;	/*tableのフチの下ライン*/
+	border-left: 1px solid #919589;		/*ボックスの背景色*/
+	
+}
+table#table-list th{
+	font-weight:bold;
+	text-align: center;
+/*	background: url(image/th_10.jpg) repeat-x bottom; */
+	border-right: 1px solid #919589;	/*tableのフチの右ライン*/
+	border-bottom: 1px solid #919589;	/*tableのフチの下ライン*/
+	border-left: 1px solid #919589;		/*ボックスの背景色*/
+	color: #333;
+}
+
+table#table-list td.table-long{
+width: 400px;
+}
+
+
+table#table-list th.table-listbox{
+width:30%;
+}
+
+/*参加日・提出日*/
+table#table-list th.table-day{
+width:65px;
+}
+
+
+/*分類*/
+table#table-list th.table-class{
+width:50px;
+padding: 1px;
+}
+
+/*提出状況*/
+table#table-list th.table-pre{
+width:60px;
+}
+
+/*詳細*/
+table#table-list th.table-details{
+width:110px;
+}
+/*詳細（出力ページ時）*/
+table#table-list th.table-details-op{
+width:65px;
+}
+
+table#table-list th.table-comp{
+width:180px;
+}
+/*企業説明会名（出力ページ）*/
+table#table-list th.table-comp-re{
+width:280px;
+}
+
+/*企業説明会名（full）*/
+table#table-list th.table-comp-full{
+width:100px;
+}
+/*コース名*/
+table#table-list th.table-c_name{
+width:100px;
+}
+/*登録者名*/
+table#table-list th.table-u_name{
+width:80px;
+}
+
+/*登録者名*/
+table#table-list th.table-u_name-long{
+width:100px;
+}
+
+/*提出状態*/
+table#table-list th.table-Status{
+width:60px;
+}
+
+
+
+/*報告書入力部分内部
+---------------------------------------------------------------------------*/
+table#table-02 { 
+   	border-collapse: collapse;	border-spacing: 0;
+    width: 100%;
+	background: white; 					/*tableボックスの背景色*/
+	margin-bottom: 10px;
+	word-break:break-all;
+	overflow:all;
+}
+
+
+table#table-02 td{
+ 	text-align:left;
+ 	padding-left: 2px;
+ 	padding-bottom: 2px;
+ 	padding-top: 2px;
+	border-right: 1px solid #919589;	/*tableのフチの右ライン*/
+	border-bottom: 1px solid #919589;	/*tableのフチの下ライン*/
+	border-left: 1px solid #919589;		/*ボックスの背景色*/
+	
+}
+table#table-02 th{
+	width: 164px;
+	font-weight:bold;
+	text-align: center;
+/*	background: url(image/th_10.jpg) repeat-x bottom; */
+	border-right: 1px solid #919589;	/*tableのフチの右ライン*/
+	border-bottom: 1px solid #919589;	/*tableのフチの下ライン*/
+	border-left: 1px solid #919589;		/*ボックスの背景色*/
+	color: #333;
+}
+
+table#table-02 td#table-print{
+	width:100px;
+	margin: 1px;
+} 
+
+
+	
+/*筆記試験入力部分内部
+---------------------------------------------------------------------------*/
+table#table-03 { 
+   	border-collapse: collapse;	border-spacing: 0;
+    width: 100%;
+	background: white; 					/*tableボックスの背景色*/
+	margin-bottom: 30px;
+}
+
+
+table#table-03 td{
+	font-weight:bold;
+/*	background: url(image/th_10.jpg) repeat-x bottom; */
+	border-right: 1px solid #919589;	/*tableのフチの右ライン*/
+	border-bottom: 1px solid #919589;	/*tableのフチの下ライン*/
+	border-left: 1px solid #919589;		/*ボックスの背景色*/
+	color: #333;
+}
+
+table#table-03 th{
+	width: 150px;
+	font-weight:bold;
+	text-align: center;
+/*	background: url(image/th_10.jpg) repeat-x bottom; */
+	border-right: 1px solid #919589;	/*tableのフチの右ライン*/
+	border-bottom: 1px solid #919589;	/*tableのフチの下ライン*/
+	border-left: 1px solid #919589;		/*ボックスの背景色*/
+	color: #333;
+}
+
+/*筆記試験入力部分内部
+---------------------------------------------------------------------------*/
+table#table-04 { 
+   	border-collapse: collapse;	border-spacing: 0;
+    width: 100%;
+	background: white; 					/*tableボックスの背景色*/
+	margin-bottom: 30px;
+}
+
+
+table#table-04 td{
+	font-weight:bold;
+/*	background: url(image/th_10.jpg) repeat-x bottom; */
+	border-right: 1px solid #919589;	/*tableのフチの右ライン*/
+	border-bottom: 1px solid #919589;	/*tableのフチの下ライン*/
+	border-left: 1px solid #919589;		/*ボックスの背景色*/
+	color: #333;
+}
+
+table#table-04 th{
+	width: 150px;
+	font-weight:bold;
+	text-align: center;
+/*	background: url(image/th_10.jpg) repeat-x bottom; */
+	border-right: 1px solid #919589;	/*tableのフチの右ライン*/
+	border-bottom: 1px solid #919589;	/*tableのフチの下ライン*/
+	border-left: 1px solid #919589;		/*ボックスの背景色*/
+	color: #333;
+}
+
+.fontc-1{
+	color:#049336;
+}
+.fontc-2{
+	color:#ff0033;
+}
+
+/*印刷ページ出力*/
+.fontc-err{
+	color:#ff0033;
+	font-size: 20px;
+	font-weight: bold;
+}
+
+
+/*印刷ページ出力
+---------------------------------------------------------------------------*/
+table#table-print {
+	border-collapse: collapse;	border-spacing: 0;
+    width: 100%;
+	background: white; 					/*tableボックスの背景色*/
+	margin-bottom: 30px;
+
+}
+table#table-print td{
+	text-align:left;
+/*	background: url(image/th_10.jpg) repeat-x bottom; */
+	border: 1px solid #000;	/*tableのフチ*/
+	color: #333;
+	padding-left: 5px;
+}
+
+table#table-print th{
+	font-weight:bold;
+	text-align: center;
+/*	background: url(image/th_10.jpg) repeat-x bottom; */
+	border: 1px solid #000;	/*tableのフチ*/
+	color: #333;
+}
+
+table#table-print th.hiduke{
+	width: 150px;;
+}
+
+table#table-print td.grope{
+	text-align: center;
+}
+table#table-print th.ren2{
+	width: 90px;
+}
+table#table-print td.ren1{
+	width: 90px;
+}
+
+table#table-print th.ren3{
+	width:80px;
+}
+
+table#table-print th.ren4{
+	width:80px;
+}
+
+table#table-print td.ren5{
+	width:80px;
+}
+
+#print input{
+	margin-bottom: 100px;
+}
+
+table#table-print td.ren-o{
+	width:200px;
+}
+
+
+/*カレンダーの部分
+---------------------------------------------------------------------------*/
+#cal * { text-align: center; font-size: 100%; }
+#cal table { border: solid 1px #919589; width: 190px; background: white;	margin-bottom: 10px; }
+#cal caption {	background: #24bbe2 url(images/midashi_bg.gif) repeat-x top;	/*背景色、画像の設定*/
+	font-size: 100%;
+	color: #FFFFFF;	/*文字色を白色に*/
+	padding-right: 10px;
+	padding-left: 10px;
+	letter-spacing: 0.2em;	/*文字間隔を少し広げる*/
+	border-top: 1px solid #26b6dd;		/*枠線（上）の幅と線種と色*/
+	border-right: 1px solid #167ca1;	/*枠線（右）の幅と線種と色*/
+	border-left: 1px solid #26b6dd;		/*枠線（左）の幅と線種と色*/
+	clear: both;}
+#cal td.today { border: dotted 1px orange;
+				color: #FF0000; }
+				
+
+
+
+/*ボタンの設定
+---------------------------------------------------------------------------*/
+#button1{
+	float:right;
+	text-align: right;
+	margin-left:auto;
+	margin-right:auto;
+}
+
+#button1 input{ 
+		 border: 0px;
+		 text-align: center;
+		 width: 150px;
+		 height: 58px;
+		 background: url(images/button/fin2.png) left top no-repeat;
+}
+
+#button1 input:hover { background-image:url("images/button/fin.png"); text-decoration:none;
+	/*ポインターをつける*/
+	cursor: pointer;}
+
+/* =========================================
+*  戻るボタン
+* ========================================= */
+#button_change {
+	float:left;
+	margin-left:auto;
+	margin-right:auto;
+	
+}
+	
+#button_change input{
+		 border: 0px;
+		 text-align: center;
+		 width: 150px;
+		 height: 58px;
+		 background: url(images/button/back2.png) left top no-repeat;
+}
+
+#button_change input:hover{ background-image:url("images/button/back.png"); text-decoration:none;
+	cursor: pointer;}
+
+
+/* =========================================
+*  印刷ボタン
+* ========================================= */	
+
+#button_print{
+	float:center;
+	text-align: center;
+	margin-left:auto;
+	margin-right:auto;
+	text-decoration:none;
+}
+
+#button_print input{
+		border: 0px;
+		 text-align: center;
+		 width: 150px;
+		 height: 58px;
+		 background: url(images/button/print2.png) left top no-repeat;
+}
+#button_print input:hover{ background-image:url("images/button/print.png"); text-decoration:none;
+	cursor: pointer;}
+
+
+	
+/* =========================================
+*  登録ボタン
+* ========================================= */	
+
+#button_reg{
+	float:right;
+	text-align: right;
+	margin-left:auto;
+	margin-right:auto;
+	text-decoration:none;
+	margin-bottom: 10px;
+}
+
+#button_reg input{
+		border: 0px;
+		 text-align: center;
+		 width: 150px;
+		 height: 58px;
+		 background: url(images/button/reg2.png) left top no-repeat;
+}
+#button_reg input:hover{ background-image:url("images/button/reg.png"); text-decoration:none;
+	cursor: pointer;}
+
+
+/* =========================================
+*  一覧ページへ戻る
+* ========================================= */
+#button_listback {
+	margin-bottom:10px;
+	float:left;
+	margin-left:auto;
+	margin-right:auto;
+	
+}
+	
+#button_listback input{
+		 border: 0px;
+		 text-align: center;
+		 width: 150px;
+		 height: 58px;
+		 background: url(images/button/listback2.png) left top no-repeat;
+}
+
+#button_listback input:hover{ background-image:url("images/button/listback.png"); text-decoration:none;
+	cursor: pointer;}
+
+
+/* =========================================
+*  変更ページ
+* ========================================= */
+
+#button_op_change{
+	float:right;
+	text-align: right;
+	margin-left:auto;
+	margin-right:auto;
+	text-decoration:none;
+}
+
+#button_op_change input{
+		border: 0px;
+		 text-align: center;
+		 width: 150px;
+		 height: 58px;
+		 background: url(images/button/op_change1.png) left top no-repeat;
+}
+#button_op_change input:hover{ background-image:url("images/button/op_change2.png"); text-decoration:none;
+	cursor: pointer;}
+
+/* =========================================
+*  削除ボタン
+* ========================================= */
+
+#button_del{
+	margin-bottom:10px;
+	float:left;
+	text-align: center;
+	margin-left:auto;
+	margin-right:auto;
+	text-decoration:none;
+}
+
+#button_del input{
+	
+		border: 0px;
+		 text-align: center;
+		 width: 150px;
+		 height: 58px;
+		 background: url(images/button/delete2.png) left top no-repeat;
+}
+#button_del input:hover{ background-image:url("images/button/delete.png"); text-decoration:none;
+	cursor: pointer;}
+
+/* =========================================
+*  ユーザー側の削除ボタン
+* ========================================= */
+
+#button_del_u{
+	margin-bottom:10px;
+	float:right;
+	text-align: center;
+	margin-left:auto;
+	margin-right:30px;
+	text-decoration:none;
+}
+
+#button_del_u input{
+		border: 0px;
+		 text-align: center;
+		 width: 150px;
+		 height: 58px;
+		 background: url(images/button/delete2.png) left top no-repeat;
+}
+#button_del_u input:hover{ background-image:url("images/button/delete.png"); text-decoration:none;
+	cursor: pointer;}
+
+
+/* =========================================
+*  確定ボタン
+* ========================================= */
+
+#button_commit{
+	margin-bottom:10px;
+	float:right;
+	text-align: right;
+	margin-left:auto;
+	margin-right:auto;
+	text-decoration:none;
+}
+
+#button_commit input{
+		border: 0px;
+		 text-align: center;
+		 width: 150px;
+		 height: 58px;
+		 background: url(images/button/commit2.png) left top no-repeat;
+}
+#button_commit input:hover{ background-image:url("images/button/commit.png"); text-decoration:none;
+	cursor: pointer;}
+
+
+/* =========================================
+*  取り消しボタン
+* ========================================= */
+
+#button_nocommit{
+	margin-bottom:10px;
+	float:right;
+	text-align: right;
+	margin-left:auto;
+	margin-right:auto;
+	text-decoration:none;
+}
+
+#button_nocommit input{
+		border: 0px;
+		 text-align: center;
+		 width: 150px;
+		 height: 58px;
+		 background: url(images/button/comnot2.png) left top no-repeat;
+}
+#button_nocommit input:hover{ background-image:url("images/button/comnot.png"); text-decoration:none;
+	cursor: pointer;}
+
+/* =========================================
+*  再提出ボタン
+* ========================================= */
+
+#button_again{
+	margin-bottom:10px;
+	float:right;
+	text-align: right;
+	margin-left:auto;
+	margin-right:auto;
+	text-decoration:none;
+}
+
+#button_again input{
+		border: 0px;
+		 text-align: center;
+		 width: 150px;
+		 height: 58px;
+		 background: url(images/button/again2.png) left top no-repeat;
+}
+#button_again input:hover{ background-image:url("images/button/again.png"); text-decoration:none;
+	cursor: pointer;}
+
+
+/* =========================================
+*  もっと見るボタン
+* ========================================= */
+
+#button_more{
+	margin-bottom:10px;
+	float:right;
+	text-align: right;
+	margin-left:auto;
+	margin-right:auto;
+	text-decoration:none;
+}
+
+#button_more input{
+		border: 0px;
+		 text-align: center;
+		 width: 120px;
+		 height: 39px;
+		 background: url(images/button/more2.png) left top no-repeat;
+}
+#button_more input:hover{ background-image:url("images/button/more.png"); text-decoration:none;
+	cursor: pointer;}
+
+
+/* =========================================
+*  FRAME
+* ========================================= */
+		
+table th span {
+	margin-left: .5em;
+	color: #f60;
+	font-weight: bold;
+}
+table td {	
+}
+			table td .err {
+				background: #FFB085;
+			}
+			table td .err input {
+				background: #FFB085;
+			}
+			table td .after.err {
+				border-color: #FFB085;
+				background: #fff !important;
+			}
+			table td .after.err input {
+				border-color: #FFB085;
+				background: #fff !important;
+			}
+			table td label {
+				margin-right: 1em;
+			}
+			table td label input {
+				margin-right: .3em;
+			}
+
+/* =========================================
+*  FRAME
+* ========================================= */
+		
+/*
+
+	p.submit {
+		margin: 0 auto;
+		padding-top: 2em;
+		width: 600px;
+		text-align: center;
+	}
+	.button {
+		display: inline-block;
+		outline: none;
+		cursor: pointer;
+		text-align: center;
+		text-decoration: none;
+		font: 14px/100% "Lucida Sans Unicode","Lucida Grande",Arial,Helvetica,"ヒラギノ丸ゴ Pro W4",HiraMaruPro-W4,"ヒラギノ角ゴ Pro W3","メイリオ",Meiryo,Osaka,sans-serif;
+		padding: .5em 2em .55em;
+		text-shadow: 0 1px 1px rgba(0,0,0,.3);
+		-webkit-border-radius: .5em;
+		-moz-border-radius: .5em;
+		border-radius: .5em;
+		-webkit-box-shadow: 0 1px 2px rgba(0,0,0,.2);
+		-moz-box-shadow: 0 1px 2px rgba(0,0,0,.2);
+		box-shadow: 0 1px 2px rgba(0,0,0,.2);
+		color: #d7d7d7;
+		border: solid 1px #333;
+		background: #333;
+		background: -webkit-gradient(linear, left top, left bottom, from(#666), to(#000));
+		background: -moz-linear-gradient(top,  #666,  #000);
+		filter:  progid:DXImageTransform.Microsoft.gradient(startColorstr='#666666', endColorstr='#000000');
+	}
+	.button:hover {
+		text-decoration: none;
+		background: #000;
+		background: -webkit-gradient(linear, left top, left bottom, from(#444), to(#000));
+		background: -moz-linear-gradient(top,  #444,  #000);
+		filter:  progid:DXImageTransform.Microsoft.gradient(startColorstr='#444444', endColorstr='#000000');
+	}
+	.button:active {
+		position: relative;
+		top: 1px;
+		color: #666;
+		background: -webkit-gradient(linear, left top, left bottom, from(#000), to(#444));
+		background: -moz-linear-gradient(top,  #000,  #444);
+		filter:  progid:DXImageTransform.Microsoft.gradient(startColorstr='#000000', endColorstr='#666666');
+	}
+	
+p.copy {
+	border-top: solid #ccc 1px;
+	padding: 0 0 3em;
+	text-align: center;
+}*/
+
+/* =========================================
+*  表示を分けるときの設定
+* ========================================= */
+
+
+ fieldset {
+ 	border-style:none;
+ 	margin:0px;
+ 	padding:0px;
+ }
+
+/*見出しを使ったときのボタンデザイン*/
+.prev, .next { background-color:#fff;
+				padding:5px 10px; color:#fff;
+				text-decoration:none;
+				margin-bottom: 10px;
+				}
+/*カーソルをのせたとき*/
+		.prev:hover{ background-image:url("images/button/back.png"); text-decoration:none;}
+		.next:hover { background-image:url("images/button/next.png"); text-decoration:none;}
+
+/*backボタンのデザイン*/
+		.prev { float:left;
+        		background-image:url("images/button/back2.png");
+        		padding:20px 75px;}
+		/*ＮＥＸＴボタンのデザイン*/
+		.next { float:right;
+        		background-image:url("images/button/next2.png");
+        		padding:20px 75px;
+        }
+
+
+/*見出し表示の文字の大きさ*/
+       #steps { list-style:none; width:100%; overflow:hidden; margin:0px; padding:0px;
+		font: 0 "ＭＳ Ｐゴシック",Osaka,"ヒラギノ角ゴ Pro W3";}
+        #steps li {font-size:24px; float:left; padding:10px; color:#b0b1b3;}
+        #steps li span {font-size:11px; display:block;}
+        #steps li.current { color:#000;}
+
+
+#line{display: none;}
+
+
+/*新規登録ページ
+---------------------------------------------------------------------------*/
+#contents_login{
+	padding-top: 0px;
+	clear: left;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 0px;
+    text-align: left;
+    width: 600px;
+}
+
+/*新規登録テーブル
+---------------------------------------------------------------------------*/
+table#table-login{ 
+	width: 100%;
+   	border-collapse: collapse;
+   	border-spacing: 0;
+	background: white; 					/*tableボックスの背景色*/
+	margin-bottom: 20px;
+}
+
+
+table#table-login td{
+ 	text-align:left;
+ 	padding-left: 2px;
+ 	padding-bottom: 2px;
+ 	padding-top: 2px;
+	border-right: 1px solid #919589;	/*tableのフチの右ライン*/
+	border-bottom: 1px solid #919589;	/*tableのフチの下ライン*/
+	border-left: 1px solid #919589;		/*ボックスの背景色*/
+	
+}
+table#table-login th{
+	width: 20%;
+	font-weight:bold;
+	text-align: center;
+/*	background: url(image/th_10.jpg) repeat-x bottom; */
+	border-right: 1px solid #919589;	/*tableのフチの右ライン*/
+	border-bottom: 1px solid #919589;	/*tableのフチの下ライン*/
+	border-left: 1px solid #919589;		/*ボックスの背景色*/
+	color: #333;
+}
+
+
+/*ログインページ
+---------------------------------------------------------------------------*/
+
+#login {
+	overflow: auto;		/*この設定でiframe風に見える*/
+	margin-right: auto;
+	margin-left: auto;
+	padding: 10px;
+	border-right: 1px solid #919589;	/*What's Newのフチの右ライン*/
+	border-bottom: 1px solid #919589;	/*What's Newのフチの下ライン*/
+	border-left: 1px solid #919589;	/*What's Newボックスの背景色*/
+	line-height: 1.8;
+
+}
+#login br{
+	margin-top:15px;
+	margin-bottom: 15px;
+	}
+
+/*ボタンを右寄せ*/
+form input#btn{
+float:right;
+
+}
+
+#login_back{
+	background:#f60;
+}
+
+/*バナー入力ページ
+---------------------------------------------------------------------------*/
+#bana img{
+	margin-bottom: 5px;
+}
+
+#bana a{
+	margin-bottom: 5px;
+	display:block;
+	height:60px;
+	
+}
+
+#bana a.o_report{
+	background-image: url(images/bana/o_report_power.png);
+
+}
+#bana a.home{
+	background-image: url(images/bana/o_hunting.png);
+
+}
+/*バナー入力ページ
+---------------------------------------------------------------------------*/
+/*#bana-sub img{
+	margin-bottom: 2px;
+	margin-top: 2px;
+}
+*/
+
+#bana-sub a{
+	display:block;
+	height:60px;
+	margin-bottom:5px;
+
+}
+
+/*学生側のサブメニュー
+---------------------------------------------------------------------------*/
+/*サブメニュー企業説明会*/
+#bana-sub a.o_report{
+	background-image: url(images/bana/o_report_sub.png);
+	
+}
+/*サブメニュー筆記試験*/
+#bana-sub a.written_e{
+	background-image: url(images/bana/o_written_e_sub.png);
+	
+}
+/*サブメニュー面接試験画像*/
+#bana-sub a.o_oral_e{
+	background-image: url(images/bana/o_oral_sub.png);
+}
+/*サブメニュー検索*/
+#bana-sub a.o_jub_hunnting_search{
+	background-image: url(images/bana/o_jub_search_sub.png);
+	
+}
+
+/*教員側のサブメニュー
+---------------------------------------------------------------------------*/
+/*担当報告書*/
+#bana-sub a.o_authority_full{
+	background-image: url(images/bana/authority_o_new_sub.png);
+}
+/*サブメニュー企業説明会*/
+#bana-sub a.o_authority_report{
+background-image: url(images/bana/authority_o_report_sub.png);
+	
+}
+/*サブメニュー筆記試験*/
+#bana-sub a.authority_o_written_e{
+	background-image: url(images/bana/authority_o_written_e_sub.png);
+	
+}
+/*サブメニュー面接試験画像*/
+#bana-sub a.o_authority_oral_e{
+	background-image: url(images/bana/authority_o_oral_sub.png);
+}
+/*サブメニュー検索*/
+#bana-sub a.o_authority_jub_user{
+	background-image: url(images/bana/authority_o_user_sub.png);
+	
+}
+
+
+/*リストの削除ボタン
+---------------------------------------------------------------------------*/
+#list_del{
+
+    color: #6699ff;
+	}
+	
+	
+
+
+
+/*CompanyApiシリーズ
+---------------------------------------------------------------------------*/
+#contents_company{
+	width: 550px;
+	margin-right: auto;
+	margin-left: auto;
+	padding-top: 30px;
+	clear: left;
+	text-align: center;
+}	
+/*CompanyApiシリーズのテーブル
+---------------------------------------------------------------------------*/
+#contents_company table{ 
+	table-layout :fixed;
+	overflow:auto; 
+	width: 100%;
+   	border-collapse: collapse;
+   	border-spacing: 0px;
+	background: white; 					/*tableボックスの背景色*/
+}
+
+
+#contents_company td{
+ 	text-align:left;
+ 	padding-left: 2px;
+ 	padding-bottom: 2px;
+ 	padding-top: 2px;
+	border-right: 1px solid #919589;	/*tableのフチの右ライン*/
+	border-bottom: 1px solid #919589;	/*tableのフチの下ライン*/
+	border-left: 1px solid #919589;		/*ボックスの背景色*/
+	
+}
+#contents_company th{
+	width: 100px;
+	font-weight:bold;
+	text-align: center;
+/*	background: url(image/th_10.jpg) repeat-x bottom; */
+	border-right: 1px solid #919589;	/*tableのフチの右ライン*/
+	border-bottom: 1px solid #919589;	/*tableのフチの下ライン*/
+	border-left: 1px solid #919589;		/*ボックスの背景色*/
+	color: #333;
+}
+
+
+
+/*company h2タグの装飾設定
+---------------------------------------------------------------------------*/
+#contents_company h2 {
+	background: #24bbe2 url(images/midashi_bg.gif) repeat-x top;	/*背景色、画像の設定*/
+	font-size: 100%;
+	color: #FFFFFF;	/*文字色を白色に*/
+	padding-right: 10px;
+	padding-left: 10px;
+	letter-spacing: 0.2em;	/*文字間隔を少し広げる*/
+	border-top: 1px solid #26b6dd;		/*枠線（上）の幅と線種と色*/
+	border-right: 1px solid #167ca1;	/*枠線（右）の幅と線種と色*/
+	border-bottom: 1px solid #167ca1;	/*枠線（下）の幅と線種と色*/
+	border-left: 1px solid #26b6dd;		/*枠線（左）の幅と線種と色*/
+	clear: both;
+}
+
+#contents_company a{
+	color: #666666;
+	text-align: right;
+}
+
+#contents_company table.company-01{
+  	border-collapse: collapse;
+ 
+		
+}
+
+#contents_company table td.zip{
+	width:50px;
+}
+
+#contents_company table td.name{
+	width: 120px;
+}
+#contents_company table td.left-none{
+		border-left: 0px;		/*ボックスの背景色*/
+		width: 50px;
+	
+}                
+#contents_company table td.right-none{
+		border-right: 0px;		/*ボックスの背景色*/
+		width:75px;
+	
+}               
+
+#contents_company table tr.bottom-none{
+		border-bottom: 0px;		/*ボックスの背景色*/
+	
+}               
+#contents_company table tr.bottom-none th{
+		border-bottom: 0px;		/*ボックスの背景色*/
+	
+}               
+
+#contents_company table tr.bottom-none td{
+		border-bottom: 0px;		/*ボックスの背景色*/
+	
+}
+
+#contents_company div{
+	overflow:auto; 
+}
+	
+#sub-wel p{
+	text-align:center;
+	font-weight: bold;
+}
+
+
+legend{
+	color: #fff;
+}

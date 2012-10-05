@@ -1,0 +1,131 @@
+@charset "utf-8";
+
+
+
+body,html {
+	height: 100%;
+	width: 100%;
+}
+body {
+	color: #666666;	/*全般の文字色*/
+	margin: 0px;
+	padding: 0px;
+	text-align: center;
+	background-color: #FFFFFF;
+	font: 75%/2.4 "ＭＳ Ｐゴシック", Osaka, "ヒラギノ角ゴ Pro W3";	/*75%が文字サイズ。/2.4が行間。*/
+}
+h1,h2,h3,p,ul,li,dl,dt,dd{
+	margin: 0px;
+	padding: 0px;
+}
+ul{
+	list-style-type: none;
+}
+img {
+	border: none;
+}
+.fr {
+	float: right;
+}
+.color1 {
+	color: #25c0e6;
+}
+
+#print{
+	padding:none;
+	float:none;
+	margin-left:auto;
+	margin-right:auto;
+	width: 650px;
+	margin-top: 20px;
+}
+
+#print h2{
+	text-decoration: underline;
+	font-size: 100%;
+	color: #FFFFFF;	/*文字色を白色に*/
+	padding-right: 10px;
+	padding-left: 10px;
+	letter-spacing: 0.2em;	/*文字間隔を少し広げる*/
+	border-top: 1px solid;		/*枠線（上）の幅と線種と色*/
+	border-right: 1px solid;	/*枠線（右）の幅と線種と色*/
+	border-left: 1px solid;		/*枠線（左）の幅と線種と色*/
+}
+
+
+/*印刷ページ出力
+---------------------------------------------------------------------------*/
+table#table-print {
+	border-collapse: collapse;	border-spacing: 0;
+    width: 100%;
+	background: white; 					/*tableボックスの背景色*/
+	margin-bottom: 30px;
+
+}
+table#table-print td{
+	text-align:left;
+/*	background: url(image/th_10.jpg) repeat-x bottom; */
+	border: 1px solid #000;	/*tableのフチ*/
+	color: #333;
+	padding-left: 5px;
+}
+
+table#table-print th{
+	font-weight:bold;
+	text-align: center;
+/*	background: url(image/th_10.jpg) repeat-x bottom; */
+	border: 1px solid #000;	/*tableのフチ*/
+	color: #333;
+}
+
+table#table-print th.hiduke{
+	width: 150px;;
+}
+
+table#table-print td.grope{
+	text-align: center;
+}
+table#table-print th.ren2{
+	width: 90px;
+}
+table#table-print td.ren1{
+	width: 90px;
+}
+
+table#table-print th.ren3{
+	width:80px;
+}
+
+table#table-print th.ren4{
+	width:80px;
+}
+
+table#table-print td.ren5{
+	width:80px;
+}
+
+#print input{
+	margin-bottom: 100px;
+}
+
+table#table-print td.ren-o{
+	width:200px;
+}
+
+
+/* =========================================
+*  印刷ボタン
+* ========================================= */	
+
+#button_print{
+	display: none;
+}
+
+#button_print input{
+	display: none;
+}
+#button_print input:hover{
+	display: none;
+	}
+
+
